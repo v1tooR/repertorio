@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background: #f8f4f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    text-align: center;
+    padding: 5rem;
+    transition: background 0.5s linear, color 0.5s linear;
+}
+label{
+    background-color: rgb(26, 25, 25);
+    border-radius: 40%;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.5s linear;
+}
+input{
+    visibility: hidden;
+}
+
+body.dark{ /* o toogle classlist do JS, deve ser adicionado após o elemento pai */
+    background-color: rgb(26, 25, 25);
+    color: white;
+}
+.container{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+body.dark label{
+    background: #f8f4f2;
+}
+.a-box{
+    display: inline-block;
+    width: 240px;
+    text-align: center;
+}
+.img-container{
+    height: 230px;
+    width: auto;
+    overflow: hidden;
+    border-radius: 0px 0px 20px 20px;
+    display: inline-block;
+}
+.img-container img{
+    transform: skew(0deg,-13deg);
+    height: 250px;
+    margin: -35px 0px 0px -70px;
+}
+.inner-img-perfil{
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0px;
+    transform: skew(0deg,13deg);
+    font-size: 0px;
+    margin: 30px 0px 0px 0px;
+    background: #801e1e;
+    height: 250px;
+    width: 200px;
+    transition: background 0.5s linear, color 0.5s linear;
+}
+.text-container.dark{
+    box-shadow: 0px 0px 10px  0px rgba(0, 0, 0, 0.3);
+    padding: 120px 20px 20px 20px;
+    border-radius: 20px;
+    background: #fff;
+    margin: -120px 0px 0px 0px;
+    line-height: 19px;
+    font-size: 14px;
+}
+.text-container h3{
+    margin: 20px 0px 10px 0px;
+    color: #801e1e;
+    font-size: 18px;
+}
+hr{
+    border:1.5px solid #801e1e;
+    border-radius: 10px;
+    width: 60%;
+    margin-top: 20px;
+    height: 2px;
+
+}
