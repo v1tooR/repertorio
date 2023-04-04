@@ -4,12 +4,34 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-body{
-    background: #f8f4f2;
+header{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 13px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul:hover > :not(:hover){
+    opacity: .4;
+    transform: scale (0.9);
+}
+ul a{
+    color: #fff;
+    text-decoration: none;
+}
+ul li{
+    float: left;
+    margin-inline: 20px;
+    list-style: none;
+}
+
+body{
+    background: #f8f4f2;
     margin: 0;
     text-align: center;
     padding: 5rem;
@@ -85,10 +107,40 @@ body.dark label{
     color: #801e1e;
     font-size: 18px;
 }
+.whoami{
+    background-color: #801e1e;
+    padding: 1em;
+    border-radius: 13px;
+    transition: .35s;
+    cursor: pointer;
+}
+.projects{
+    background-color: #801e1e;
+    padding: 1em;
+    padding-inline: 1.3em;
+    border-radius: 13px;
+    transition: .35s;
+    cursor: pointer;
+}
+.knowledge{
+    background-color: #801e1e;
+    padding: 1em;
+    border-radius: 13px;
+    transition: .35s;
+    cursor: pointer;
+}
+.contact{
+    background-color: #801e1e;
+    padding: 1em;
+    border-radius: 13px;
+    transition: .35s;
+    cursor: pointer;
+}
+
 hr{
     border:1.5px solid #801e1e;
     border-radius: 10px;
-    width: 60%;
+    width: 50%;
     margin-top: 20px;
     height: 2px;
 
