@@ -117,7 +117,7 @@ body.dark label{
 .projects{
     background-color: #801e1e;
     padding: 1em;
-    padding-inline: 1.3em;
+    padding-inline: 2.5em;
     border-radius: 13px;
     transition: .35s;
     cursor: pointer;
@@ -132,6 +132,7 @@ body.dark label{
 .contact{
     background-color: #801e1e;
     padding: 1em;
+    padding-inline: 2.5em;
     border-radius: 13px;
     transition: .35s;
     cursor: pointer;
@@ -154,7 +155,7 @@ hr{
     margin-top: 20px;
     height: 2px;
 }
-@media (max-width: 600px) {
+@media (max-width: 650px) {/*celular*/
     .navgation ul li{
         margin-top: 20px;
     }
@@ -175,3 +176,4 @@ hr{
         margin-top: 10%;
     }
 }
+
